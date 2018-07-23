@@ -3,15 +3,17 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
   height: 80px;
+
+  animation: App-logo-spin infinite 20s linear;
 }
 
 .App-header {
-  background-color: #222;
   height: 150px;
   padding: 20px;
+
   color: white;
+  background-color: #222;
 }
 
 .App-title {
@@ -23,6 +25,91 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.page {
+  margin: 20px;
+}
+
+.interactions {
+  text-align: center;
+}
+
+.table {
+  margin: 20px 0;
+}
+
+.table-header {
+  font-size: 16px;
+  line-height: 24px;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 10px;
+}
+
+.table-empty {
+  font-size: 16px;
+
+  margin: 200px;
+
+  text-align: center;
+}
+
+.table-row {
+  line-height: 24px;
+
+  display: flex;
+
+  margin: 10px 0;
+  padding: 10px;
+
+  white-space: nowrap;
+
+  border: 1px solid #e3e3e3;
+  background: #fff;
+}
+
+.table-header > span {
+  overflow: hidden;
+
+  padding: 0 5px;
+
+  text-overflow: ellipsis;
+}
+
+.table-row > span {
+  overflow: hidden;
+
+  padding: 0 5px;
+
+  text-overflow: ellipsis;
+}
+
+.button-inline {
+  font-size: inherit;
+
+  padding: 0;
+
+  cursor: pointer; 
+  text-align: inherit;
+
+  color: inherit;
+  border-width: 0;
+  background: transparent;
+
+  -webkit-font-smoothing: inherit;
+}
+
+.button-active {
+  border-bottom: 1px solid #38bb6c;
+  border-radius: 0;
 }
