@@ -51,7 +51,9 @@ describe("Table", () => {
     list: [
       { title: "1", author: "1", num_comments: 1, points: 2, objectID: "y" },
       { title: "2", author: "2", num_comments: 2, points: 2, objectID: "z" }
-    ]
+    ],
+    sortKey: 'TITLE',
+    isSortedReverse: false,
   };
 
   it('renders without crashing', () => {
